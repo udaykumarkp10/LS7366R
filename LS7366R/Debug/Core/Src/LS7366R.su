@@ -1,0 +1,6 @@
+../Core/Src/LS7366R.c:15:6:LS7366R_Init	24	static
+../Core/Src/LS7366R.c:38:6:LS7366R_ClearStatus	16	static
+../Core/Src/LS7366R.c:47:9:LS7366R_ReadStatus	16	static
+../Core/Src/LS7366R.c:61:6:LS7366R_ClearCounter	16	static
+../Core/Src/LS7366R.c:70:10:LS7366R_ReadCounter	24	static
+../Core/Src/LS7366R.c:103:6:LS7366R_LoadCounter	32	static
