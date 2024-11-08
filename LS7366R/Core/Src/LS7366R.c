@@ -20,7 +20,7 @@ void LS7366R_Init(uint8_t byte_mode)
 
     // Set LS7366R to x4 quadrature mode (FOURX_COUNT)
     uint8_t mode0 = WRITE_MODE0;
-    uint8_t mode0_data = FOURX_COUNT | INDX_LOADO ;  // Enable index pulse to reset the counter
+    uint8_t mode0_data = FOURX_COUNT | INDX_RESETC;  // Enable index pulse to load the counter
     CS_RESET();
     HAL_SPI_Transmit(&hspi1, &mode0, 1, HAL_MAX_DELAY);
     HAL_SPI_Transmit(&hspi1, &mode0_data, 1, HAL_MAX_DELAY);

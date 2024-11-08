@@ -117,14 +117,6 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  count = LS7366R_ReadCounter();				// Read encoder count
-	  status = LS7366R_ReadStatus();
-	  if (status & 0x10) {
-		  index_count++;
-		  LS7366R_LoadCounter(0);
-		  LS7366R_ClearStatus();
-	  }
-
-	  HAL_Delay(10);
   }
   /* USER CODE END 3 */
 }
