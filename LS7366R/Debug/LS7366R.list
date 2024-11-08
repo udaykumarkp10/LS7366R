@@ -100,7 +100,7 @@ void LS7366R_Init(uint8_t byte_mode)
     uint8_t mode0 = WRITE_MODE0;
  800015e:	2388      	movs	r3, #136	@ 0x88
  8000160:	73fb      	strb	r3, [r7, #15]
-    uint8_t mode0_data = FOURX_COUNT | INDX_RESETC;  // Enable index pulse to load the counter
+    uint8_t mode0_data = FOURX_COUNT | INDX_RESETC;  // Enable index pulse to reset the counter
  8000162:	2323      	movs	r3, #35	@ 0x23
  8000164:	73bb      	strb	r3, [r7, #14]
     CS_RESET();
